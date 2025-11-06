@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Schedule - Past</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>📅 To-Do Schedule</h1>
+        <nav>
+            <a href="index.html">Today</a>
+            <a href="past.html" class="active">Past</a>
+            <a href="future.html">Future</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tasks-section">
+            <h2>Past Tasks</h2>
+            <div id="tasksContainer">
+                <!-- Past tasks will be rendered here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            renderPastTasks();
+        });
+    </script>
+</body>
+</html>
